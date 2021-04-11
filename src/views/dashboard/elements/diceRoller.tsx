@@ -11,6 +11,7 @@ function rollDie() {
 export default function DiceRoller() {
   const [rolls, setRolls] = useState([0, ""]);
   const [rollCount, setRollCount] = useState(1);
+
   return (
     <div className="App">
       <Card title="Dice">
@@ -28,7 +29,7 @@ export default function DiceRoller() {
               let newRolls = [];
               for (let i = 0; i < rollCount; i++) {
                 let roll = rollDie();
-                newRolls.push(roll, ",");
+                newRolls.push(roll, " ");
               }
               setRolls(newRolls);
             }}

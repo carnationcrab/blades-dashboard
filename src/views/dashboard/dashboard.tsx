@@ -9,6 +9,7 @@ import {
 } from "@ant-design/icons";
 import DiceRoller from "./elements/diceRoller";
 import Clock from "./elements/clock";
+import ClockForm from "./forms/addClock";
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -77,6 +78,9 @@ export default function Dashboard() {
                 </Col>
                 <Col>
                   <Clock slices={4} />
+                </Col>
+                <Col>
+                  <ClockForm />
                 </Col>
               </Row>
             </Content>

@@ -8,6 +8,7 @@ import {
   NotificationOutlined,
 } from "@ant-design/icons";
 import DiceRoller from "./elements/diceRoller";
+import Clock from "./elements/clock";
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -73,6 +74,7 @@ export default function Dashboard() {
               <Row>
                 <Col>
                   <DiceRoller />
+                  <Clock />
                 </Col>
               </Row>
             </Content>

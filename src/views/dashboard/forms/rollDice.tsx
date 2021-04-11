@@ -3,16 +3,20 @@ import React, { useState } from "react";
 import DiceRoller from "../elements/diceRoller";
 
 function DiceForm() {
-  const [diceData, setDiceData] = useState([<div></div>]);
+  const [diceData, setDiceData] = useState(<div></div>);
 
-  const onFinish = (values: any) => {
+  function onFinish(values: any) {
     console.log("Success:", values);
-    setDiceData([values]);
-  };
+    setDiceData(
+      <div>
+        <DiceRoller rollData={values}></DiceRoller>
+      </div>
+    );
+  }
 
-  const onFinishFailed = (errorInfo: any) => {
+  function onFinishFailed(errorInfo: any) {
     console.log("Failed:", errorInfo);
-  };
+  }
 
   return (
     <div className="App">
@@ -97,6 +101,7 @@ function DiceForm() {
           </Form.Item>
         </Form>
       </Card>
+      {diceData}
     </div>
   );
 }

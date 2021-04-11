@@ -22,7 +22,7 @@ export default function ClockForm() {
 
   return (
     <div className="App">
-      <Card>
+      <Card title="Add a Progress Clock">
         <Form
           name="basic"
           initialValues={{ remember: true }}

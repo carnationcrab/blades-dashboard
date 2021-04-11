@@ -11,7 +11,7 @@ export default function ClockForm() {
     addPie([
       ...pies,
       <div>
-        <Clock slices={values.slices} />
+        <Clock slices={values.slices} name={values.name} />
       </div>,
     ]);
   };
@@ -29,6 +29,14 @@ export default function ClockForm() {
           onFinish={onFinish}
           onFinishFailed={onFinishFailed}
         >
+          <Form.Item
+            label="Name"
+            name="name"
+            rules={[{ required: true, message: "Please Name Your Clock!" }]}
+          >
+            <Input />
+          </Form.Item>
+
           <Form.Item
             label="Slices"
             name="slices"

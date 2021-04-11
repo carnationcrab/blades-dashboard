@@ -77,9 +77,6 @@ export default function Dashboard() {
                   <DiceRoller />
                 </Col>
                 <Col>
-                  <Clock slices={4} />
-                </Col>
-                <Col>
                   <ClockForm />
                 </Col>
               </Row>

@@ -19,7 +19,7 @@ export default function Clock(props: any) {
     <div className="App">
       {deleted == false ? (
         <Card
-          title="Progress Clock"
+          title={props.name}
           extra={
             <Button
               type="text"

@@ -10,6 +10,7 @@ import {
 import DiceRoller from "./elements/diceRoller";
 import Clock from "./elements/clock";
 import ClockForm from "./forms/addClock";
+import DiceForm from "./forms/rollDice";
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -74,7 +75,7 @@ export default function Dashboard() {
             >
               <Row>
                 <Col>
-                  <DiceRoller />
+                  <DiceForm />
                 </Col>
                 <Col>
                   <ClockForm />

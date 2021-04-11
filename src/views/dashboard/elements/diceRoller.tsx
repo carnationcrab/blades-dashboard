@@ -8,7 +8,7 @@ function rollDie() {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-export default function DiceRoller() {
+export default function DiceRoller(props: any) {
   const [rolls, setRolls] = useState([0, ""]);
   const [rollCount, setRollCount] = useState(1);
 

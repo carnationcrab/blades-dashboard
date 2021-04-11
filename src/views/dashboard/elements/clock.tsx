@@ -8,8 +8,6 @@ export default function Clock(props: any) {
   const [deleted, setDeleted] = useState(false);
   console.log(props.slices);
 
-  let colors = ["grey", "grey", "grey", "grey", "grey", "grey"];
-
   let pieData = [];
   let sliceY = 100 / props.slices;
   for (let i = 0; i < props.slices; i++) {
